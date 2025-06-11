@@ -5,6 +5,7 @@ import ProjectsSection from '../components/ProjectsSection';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SkillsSection from './../components/SkillsSection';
+import ContactForm from '../components/ContactForm';
 
 function App() {
   return (
@@ -32,7 +33,11 @@ function App() {
       </section>
 
       <section id="skills">
-        <SkillsSection/>
+        <SkillsSection />
+      </section>
+
+      <section id="contact">
+        <ContactForm />
       </section>
 
       <Footer />

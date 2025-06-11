@@ -34,7 +34,7 @@ const projects: Project[] = [
     title: "Prácticas Universidad",
     description:
         `También se incluyen varias prácticas de la universidad como por ejemplo esta práctica 
-        sobre estructuras de datos y optimización así como tests de rendimiento`,
+        sobre estructuras de datos avanzadas y optimización así como tests de rendimiento`,
     tech: ["Java"],
     image: "/images/projects/EPED.jpg",
     github: "https://github.com/Hugoiglesiasdiaz/Practica-UNED-EPED",
