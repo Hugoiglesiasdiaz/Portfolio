@@ -3,6 +3,8 @@ import AboutMeSection from '../components/AboutMeSection';
 import StudiesSection from '../components/StudiesSection';
 import ProjectsSection from '../components/ProjectsSection';
 import Navbar from '../components/NavBar';
+import Footer from '../components/Footer';
+import SkillsSection from './../components/SkillsSection';
 
 function App() {
   return (
@@ -28,6 +30,13 @@ function App() {
       <section id="projects">
         <ProjectsSection />
       </section>
+
+      <section id="skills">
+        <SkillsSection/>
+      </section>
+
+      <Footer />
+
     </>
   );
 }
