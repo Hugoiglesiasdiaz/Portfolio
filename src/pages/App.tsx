@@ -7,6 +7,8 @@ import Footer from '../components/Footer';
 import SkillsSection from './../components/SkillsSection';
 import ContactForm from '../components/ContactForm';
 
+import myphoto from "../assets/myphoto.jpg";
+
 function App() {
   return (
     <>
@@ -15,7 +17,7 @@ function App() {
       <section id="presentation" >
         <PresentationSection
           name="Hugo Iglesias Díaz"
-          photoUrl="/images/myphoto.jpg"
+          photoUrl={myphoto}
           role="Desarrollador FullStack"
         />
       </section>
