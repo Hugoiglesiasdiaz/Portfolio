@@ -1,5 +1,4 @@
 import PresentationSection from '../components/PresentationSection';
-import AboutMeSection from '../components/AboutMeSection';
 import StudiesSection from '../components/StudiesSection';
 import ProjectsSection from '../components/ProjectsSection';
 import Navbar from '../components/NavBar';
@@ -20,10 +19,6 @@ function App() {
           photoUrl={myphoto}
           role="Desarrollador FullStack"
         />
-      </section>
-
-      <section id="about">
-        <AboutMeSection />
       </section>
 
       <section id="studies">

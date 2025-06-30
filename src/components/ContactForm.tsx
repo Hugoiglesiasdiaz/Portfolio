@@ -34,23 +34,22 @@ const ContactForm: React.FC = () => {
                     console.error("Error desconocido al enviar el mensaje", error);
                 }
             });
-        
     };
 
     return (
-        <section className="px-6 py-20 bg-gray-100 dark:bg-gray-900">
+        <section className="px-6 py-20 bg-gray-900">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-12">
+                <h2 className="text-4xl font-bold text-center text-white mb-12">
                     Contáctame
                 </h2>
                 {submitted ? (
-                    <p className="text-green-600 dark:text-green-400 text-center">
+                    <p className="text-green-400 text-center">
                         ¡Gracias por tu mensaje! Te responderé pronto.
                     </p>
                 ) : (
                     <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
                         <div>
-                            <label className="block mb-1 font-medium text-gray-700 dark:text-gray-300">
+                            <label className="block mb-1 font-medium text-gray-300">
                                 Nombre
                             </label>
                             <input
@@ -59,11 +58,11 @@ const ContactForm: React.FC = () => {
                                 value={form.name}
                                 onChange={handleChange}
                                 required
-                                className="w-full border border-gray-300 dark:border-gray-600 rounded px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                                className="w-full border border-gray-600 rounded px-4 py-2 bg-gray-800 text-white"
                             />
                         </div>
                         <div>
-                            <label className="block mb-1 font-medium text-gray-700 dark:text-gray-300">
+                            <label className="block mb-1 font-medium text-gray-300">
                                 Correo electrónico
                             </label>
                             <input
@@ -72,11 +71,11 @@ const ContactForm: React.FC = () => {
                                 value={form.email}
                                 onChange={handleChange}
                                 required
-                                className="w-full border border-gray-300 dark:border-gray-600 rounded px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                                className="w-full border border-gray-600 rounded px-4 py-2 bg-gray-800 text-white"
                             />
                         </div>
                         <div>
-                            <label className="block mb-1 font-medium text-gray-700 dark:text-gray-300">
+                            <label className="block mb-1 font-medium text-gray-300">
                                 Mensaje
                             </label>
                             <textarea
@@ -85,7 +84,7 @@ const ContactForm: React.FC = () => {
                                 onChange={handleChange}
                                 required
                                 rows={5}
-                                className="w-full border border-gray-300 dark:border-gray-600 rounded px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                                className="w-full border border-gray-600 rounded px-4 py-2 bg-gray-800 text-white"
                             ></textarea>
                         </div>
                         <button

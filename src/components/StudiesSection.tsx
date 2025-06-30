@@ -24,23 +24,23 @@ const StudiesSection: React.FC = () => {
   ];
 
   return (
-    <section className="px-6 py-16 bg-white dark:bg-gray-900">
-      <h2 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-10">
+    <section className="px-6 py-16 bg-gray-900">
+      <h2 className="text-4xl font-bold text-center text-white mb-10">
         Formación y Estudios
       </h2>
       <div className="space-y-6 max-w-3xl mx-auto">
         {studies.map((study, index) => (
           <article
             key={`${study.title}-${index}`}
-            className="p-4 border-l-4 border-blue-500 bg-gray-50 dark:bg-gray-800 shadow rounded"
+            className="p-4 border-l-4 border-blue-500 bg-gray-800 shadow rounded"
           >
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+            <h3 className="text-xl font-semibold text-white">
               {study.url ? (
                 <a
                   href={study.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline text-blue-600 dark:text-blue-400"
+                  className="hover:underline text-blue-400"
                 >
                   {study.title}
                 </a>
@@ -48,8 +48,8 @@ const StudiesSection: React.FC = () => {
                 study.title
               )}
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">{study.location}</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">{study.year}</p>
+            <p className="text-gray-300">{study.location}</p>
+            <p className="text-sm text-gray-400">{study.year}</p>
           </article>
         ))}
       </div>

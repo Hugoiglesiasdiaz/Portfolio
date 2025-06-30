@@ -18,8 +18,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   demo,
 }) => {
   return (
-    <section className="px-6 py-12 bg-gray-100 dark:bg-gray-800">
-      <div className="max-w-4xl mx-auto bg-white dark:bg-gray-900 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-transform transform hover:-translate-y-1">
+    <section className="px-6 py-12 bg-gray-900">
+      <div className="max-w-4xl mx-auto bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-transform transform hover:-translate-y-1">
         {image && (
           <img
             src={image}
@@ -28,17 +28,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           />
         )}
         <div className="p-8">
-          <h3 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
-            {title}
-          </h3>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+          <h3 className="text-3xl font-bold text-white mb-4">{title}</h3>
+          <p className="text-lg text-gray-300 leading-relaxed mb-6">
             {description}
           </p>
           <div className="flex flex-wrap gap-3 mb-6">
             {tech.map((t, index) => (
               <span
                 key={index}
-                className="bg-gray-200 dark:bg-gray-700 text-sm px-4 py-1 rounded-full text-gray-800 dark:text-white"
+                className="bg-gray-700 text-sm px-4 py-1 rounded-full text-white"
               >
                 {t}
               </span>
@@ -50,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 href={demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+                className="text-blue-400 font-semibold hover:underline"
               >
                 Demo
               </a>
@@ -60,7 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-800 dark:text-gray-200 font-semibold hover:underline"
+                className="text-gray-200 font-semibold hover:underline"
               >
                 Código
               </a>
