@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import lookFinderImg from "../assets/projects/LookFinder.jpg";
 import proyectoLaravelImg from "../assets/projects/ProyectoLaravel.jpg";
 import epedImg from "../assets/projects/EPED.jpg";
+import grimoireImg from "../assets/projects/Grimoire.png";
 
 interface Project {
   title: string;
@@ -11,9 +12,21 @@ interface Project {
   tech: string[];
   image?: string;
   github?: string;
+  devpost?: string;
 }
 
 const projects: Project[] = [
+  {
+    title: "Grimoire",
+    description: `Proyecto ganador en el HackUDC 2026 para el reto de Merlin Software. 
+    Grimoire es una aplicación web de gestión de archivos de todo tipo,pdf,imagenes,csv,etc. Incluye funcionalidades como un
+    buscador semántico, un sistema de etiquetas, un sistema de permisos e incluso un chatbot con el que poder resumir documentos o pedir ayuda
+    para buscar información`,
+    tech: ["HTML", "Python", "Elastic-search", "Flask", "sentence-transformers"],
+    image: grimoireImg,
+    github: "https://github.com/Yupikaiyi/Grimoirev2",
+    devpost: "https://devpost.com/software/grimorie",
+  },
   {
     title: "Look Finder",
     description: `Aplicación móvil presentada para el evento HACKUDC 2025. Esta aplicación permite sacar una foto 
@@ -49,7 +62,7 @@ const ProjectsSection: React.FC = () => {
         <h2 className="text-4xl font-bold text-center text-white mb-12">
           Proyectos
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((proj, idx) => (
             <ProjectCard key={idx} {...proj} />
           ))}

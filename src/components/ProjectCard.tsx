@@ -7,6 +7,7 @@ interface ProjectCardProps {
   image?: string;
   github?: string;
   demo?: string;
+  devpost?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -16,6 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
   github,
   demo,
+  devpost,
 }) => {
   return (
     <section className="px-6 py-12 bg-gray-900">
@@ -58,9 +60,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-200 font-semibold hover:underline"
+                className="text-blue-400 font-semibold hover:underline"
               >
                 Código
+              </a>
+            )}
+            {devpost && (
+              <a
+                href={devpost}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 font-semibold hover:underline flex items-center gap-1"
+              >
+                Devpost
               </a>
             )}
           </div>
