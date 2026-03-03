@@ -17,7 +17,7 @@ function App() {
         <PresentationSection
           name="Hugo Iglesias Díaz"
           photoUrl={myphoto}
-          role="Desarrollador FullStack"
+          role="Desarrollador Software"
         />
       </section>
 

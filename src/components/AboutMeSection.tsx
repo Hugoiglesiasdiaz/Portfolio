@@ -8,7 +8,7 @@ const AboutMeSection: React.FC = () => {
           Sobre mí
         </h2>
         <p className="text-lg text-gray-300 leading-relaxed">
-          Soy un desarrollador junior apasionado por continuar aprendiendo nuevas tecnologías a la
+          Soy un desarrollador software apasionado por continuar aprendiendo nuevas tecnologías a la
           par que continuar desarrollando aplicaciones de todo tipo.
           Me especializo en tecnologías como <strong>React</strong>, 
           <strong> Java</strong>, <strong> SQL</strong>, 
