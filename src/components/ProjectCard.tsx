@@ -45,16 +45,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
           </div>
           <div className="flex gap-6">
-            {demo && (
-              <a
-                href={demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 font-semibold hover:underline"
-              >
-                Demo
-              </a>
-            )}
             {github && (
               <a
                 href={github}
@@ -63,6 +53,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 className="text-blue-400 font-semibold hover:underline"
               >
                 Código
+              </a>
+            )}
+            {demo && (
+              <a
+                href={demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 font-semibold hover:underline"
+              >
+                Demo
               </a>
             )}
             {devpost && (

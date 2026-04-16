@@ -5,6 +5,7 @@ import lookFinderImg from "../assets/projects/LookFinder.jpg";
 import proyectoLaravelImg from "../assets/projects/ProyectoLaravel.jpg";
 import epedImg from "../assets/projects/EPED.jpg";
 import grimoireImg from "../assets/projects/Grimoire.png";
+import mobileReactImg from "../assets/projects/MobileReact.jpg";
 
 interface Project {
   title: string;
@@ -12,10 +13,23 @@ interface Project {
   tech: string[];
   image?: string;
   github?: string;
+  demo?: string;
   devpost?: string;
 }
 
 const projects: Project[] = [
+  {
+    title: "Mobile Shop",
+    description: `Proyecto desarrollado como prueba técnica de alto nivel para demostrar habilidades avanzadas en el ecosistema
+    React. Esta aplicación de gestión web permite la administración dinámica de un catálogo de productos, 
+    integrando un carrito de compras interactivo, filtrado avanzado y persistencia de datos. 
+    Incluye un entorno de desarrollo profesional con tests unitarios automatizados, 
+    un pipeline de CI/CD para asegurar la calidad del código y despliegue continuo en Vercel.`,
+    tech: ["React 19", "Vite", "Tailwind CSS", "Vitest", "GitHub Actions", "Vercel"],
+    image: mobileReactImg,
+    github: "https://github.com/Hugoiglesiasdiaz/Gestion-web-React",
+    demo: "https://gestion-web-react.vercel.app",
+  },
   {
     title: "Grimoire",
     description: `Proyecto ganador en el HackUDC 2026 para el reto de Merlin Software. 
