@@ -6,7 +6,7 @@ import proyectoLaravelImg from "../assets/projects/ProyectoLaravel.jpg";
 import epedImg from "../assets/projects/EPED.jpg";
 import grimoireImg from "../assets/projects/Grimoire.png";
 import mobileReactImg from "../assets/projects/MobileReact.jpg";
-import mauiTime from "../assets/projects/MauiTime.jpg";
+import mauiTime from "../assets/projects/mauiTime.jpg";
 import rutvi from "../assets/projects/Rutvi.jpg";
 
 interface Project {
