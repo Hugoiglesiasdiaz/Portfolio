@@ -6,6 +6,8 @@ import proyectoLaravelImg from "../assets/projects/ProyectoLaravel.jpg";
 import epedImg from "../assets/projects/EPED.jpg";
 import grimoireImg from "../assets/projects/Grimoire.png";
 import mobileReactImg from "../assets/projects/MobileReact.jpg";
+import mauiTime from "../assets/projects/MauiTime.jpg";
+import rutvi from "../assets/projects/Rutvi.jpg";
 
 interface Project {
   title: string;
@@ -18,6 +20,26 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: "MauiTime",
+    description: `Aplicación de productividad centrada en la experiencia de usuario que rompe con el 
+    software tradicional. Presenta un HUD inspirado en la estética fanzine de Persona 5, 
+    utilizando animaciones de alta velocidad basadas en hardware (GPU) y sistemas de control de 
+    renderizado efímeros mediante tokens para blindar la interfaz.`,
+    tech: [".NET MAUI", "C#", "XAML", "WinUI 3"],
+    image: mauiTime, // Recuerda importar esta imagen en tu archivo del portfolio
+    github: "https://github.com/Hugoiglesiasdiaz/MauiTime", 
+  },
+  {
+    title: "Rutvi",
+    description: `Progressive Web App (PWA) de alto rendimiento orientada a la gestión y visualización 
+    dinámica de transporte en tiempo real. Integra cálculos geográficos con la fórmula Haversine y 
+    procesamiento estático de datos GTFS nativos para mitigar la inestabilidad de las API de información 
+    pública de terceros.`,
+    tech: ["React 19", "TypeScript", "Tailwind CSS v4", "Leaflet"],
+    image: rutvi, // Recuerda importar esta imagen en tu archivo del portfolio
+    github: "https://github.com/Hugoiglesiasdiaz/Rutvi", 
+  },
   {
     title: "Mobile Shop",
     description: `Proyecto desarrollado como prueba técnica de alto nivel para demostrar habilidades avanzadas en el ecosistema
